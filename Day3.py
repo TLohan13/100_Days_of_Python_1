@@ -1,35 +1,3 @@
-import random
-import my_module
-
-# DAY 1
-
-# 1) Creat Greeting
-print("Welcome to the band name generator!")
-# 2) Ask for city that user grew up in - made variable name to store data
-city = input("Which city did you grow up in?\n")
-# 3) Ask for pet name of pet they've had
-pet = input("What is the name of your pet?\n")
-# 4) Add City Name and Pet Name
-print("Your band name is " + city + " " + pet + "!")
-
-
-# Day 2
-
-# Welcome Message
-print("Welcome to the tip calculator!")
-# Input for bill received. Converted to float because bills usually have cents.
-bill = float(input("What was the current bill? $"))
-# Do not want customers to add "%" to input statement.
-tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
-people = int(input("How many people are you splitting the bill with? "))
-tip_as_percent = tip / 100
-total_tip_amount = bill * tip_as_percent
-total_bill = bill + total_tip_amount
-bill_per_person = total_bill / people
-final_amount = round(bill_per_person, 2)
-final_amount = "{:.2f}".format(bill_per_person)
-print(f"Each person should pay: ${final_amount}")
-
 # Day 3
 
 # Introduction
@@ -70,11 +38,3 @@ if choice1 == "left":
         print("You got eaten by a giant goldfish!")
 else:
     print("You fell into a snake pit. Game over!")
-
-# Day 4
-
-
-# random_integer = random.randint(1, 10)
-# print(random_integer)
-
-print(my_module.pi)
